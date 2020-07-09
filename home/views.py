@@ -9,3 +9,6 @@ def index(request):
 def home(response):
     ls = _get_queryset(Information)
     return render(response, "home/base.html", {})
+
+def webpage1(request):
+    return render(request, "home/calendar.html")
